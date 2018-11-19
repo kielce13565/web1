@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>countryList</title>
+        <meta name="description" content="Brackets에 대한 대화식 시작 안내서입니다.">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            *{margin:0; padding:0; text-decoration: none; list-style-type: none;}
+            #main{width:85%; height:850px; margin: 0 auto; }
+            #contents{width:95%; height:auto;  margin: auto; }
+            .btn{width:70px; height:35px; background-color:#b9ecff; border:0 none; margin-left: 5px; box-shadow: 4px 3px 3px rgba(0,0,0,0.3); }
+            .btn:active, .btn:focus , .btn:hover{background: black; color:white; font-weight: bold; cursor: pointer;}
+            .btn_box{width:15%; height:auto; float:right; padding-right: 3%;}
+            .btn:active {  background-color: black;  box-shadow: 0px 0px 3px #666;  transform: translateY(4px);}
+            
+            #main h3{padding-left:5px; border-left: 8px solid #b9ecff;}
+            
+            #contents table{width:100%; height:100%; background: white; padding:3%;}
+            #contents table th{background-color:#b9ecff; }
+            #contents table th ,#contents table td{ height:40px; text-align: center; text-overflow:ellipsis;word-wrap:normal;width:100px;overflow:hidden; }
+           
+            .page_box{width:30%; height:30px; margin: auto; }
+            .page_box a{width:30px; height: 30px; float: left; display: block; margin-right: 2px; border:1px solid #b9ecff; line-height: 2em; text-align: center; color:black;}
+            .selectedPg a, a:hover,  a:active, a:focus{font-weight: bold; border:1px solid #b9ecff; background-color: #b9ecff; color:white;}
+            
+            .searchBox{width: 30%; height:auto; margin: auto; margin-top: 5%;}
+            
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="contents">
+                <h3>countryList</h3>
+                <div class="searchBox">
+                    <select>
+                        <option>국가이름</option>
+                        <option>국가코드</option>
+                        <option>대표여행지</option>
+                        <option>국가설명</option>
+                    </select>
+                    <input type="text"><input type="button" value="검색" class="btn">
+
+                </div>
+                
+                <table>
+                    <colgroup>
+                        <col width="5%">
+                        <col width="20%">
+                        <col width="15%">
+                        <col width="25%">
+                        <col width="auto">
+                    </colgroup>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>국가이름</th>
+                        <th>국가코드</th>
+                        <th>대표여행지</th>
+                        <th>국가설명</th>
+                    </tr>
+                        
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>국가이름ex1</td>
+                            <td>국가코드ex1</td>
+                            <td>대표여행지ex1</td>
+                            <td>국가설명ex1</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>국가이름ex2</td>
+                            <td>국가코드ex2</td>
+                            <td>대표여행지ex2</td>
+                            <td>국가설명ex2국가설명ex1국가설명ex1국가설명ex1국가설명ex1국가설명ex1국가설명ex1</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>국가이름ex3</td>
+                            <td>국가코드ex3</td>
+                            <td>대표여행지ex3</td>
+                            <td>국가설명ex3</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>국가이름ex4</td>
+                            <td>국가코드ex4</td>
+                            <td>대표여행지ex4</td>
+                            <td>국가설명ex4</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>국가이름ex5</td>
+                            <td>국가코드ex5</td>
+                            <td>대표여행지ex5</td>
+                            <td>국가설명ex5</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>국가이름ex6</td>
+                            <td>국가코드ex6</td>
+                            <td>대표여행지ex6</td>
+                            <td>국가설명ex6</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>국가이름ex7</td>
+                            <td>국가코드ex7</td>
+                            <td>대표여행지ex7</td>
+                            <td>국가설명ex7</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>국가이름ex8</td>
+                            <td>국가코드ex8</td>
+                            <td>대표여행지ex8</td>
+                            <td>국가설명ex8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>국가이름ex9</td>
+                            <td>국가코드ex9</td>
+                            <td>대표여행지ex9</td>
+                            <td>국가설명ex9</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>국가이름ex10</td>
+                            <td>국가코드ex10</td>
+                            <td>대표여행지ex10</td>
+                            <td>국가설명ex10</td>
+                        </tr>
+                    
+                </table>
+                <div class="page_box">
+                    <span class="selectedPg"><a href="javascript:void(0)">1</a></span>
+                    <a href="javascript:void(0)">2</a>
+                    <a href="javascript:void(0)">3</a>
+                    <a href="javascript:void(0)">4</a>
+                    <a href="javascript:void(0)">5</a>
+                    <a href="javascript:void(0)">6</a>
+                    <a href="javascript:void(0)">7</a>
+                    <a href="javascript:void(0)">8</a>
+                    <a href="javascript:void(0)">9</a>
+                    <a href="javascript:void(0)">10</a>
+                </div>
+                <div class="btn_box">
+                    <input type="button" value="삭제"  class="btn"><input type="button" value="수정" class="btn"><input type="button" value="국가등록" class="btn">
+                </div>  
+            </div>
+                                                                                                                                        
+        </div>
+    </body>
+</html>
+        
